@@ -1,9 +1,9 @@
 title: Discord Webhook | whdzera
 email: whdzera@gmail.com
-baseurl: "" 
+baseurl: "/discord-webhook" 
 url: "" 
 twitter_username: whdzera
 github_username:  rokhimin/discord-webhook
 
 permalink: /:title.rb
-files: ""
+files: "/discord-webhook"
