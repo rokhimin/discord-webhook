@@ -10,16 +10,173 @@
             height: 30px;
             background-color: #535955;
             }
+
+            :root {
+              --discord-bg: #36393f;
+              --discord-dark: #2f3136;
+              --discord-light: #dcddde;
+              --discord-blue: #5865f2;
+              --discord-green: #57f287;
+            }
             
-            #loading {
-          display: none;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          font-size: 24px;
-          font-weight: bold;
-        }
-        #card-info {
-          display: none;
-        }
+            body {
+              background-color: #202225;
+              color: var(--discord-light);
+              min-height: 100vh;
+            }
+            
+            .card {
+              border-radius: 8px;
+              background-color: var(--discord-dark);
+              box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+              margin-bottom: 1.5rem;
+            }
+            
+            .card-header {
+              background-color: var(--discord-bg);
+              border-radius: 8px 8px 0 0;
+              padding: 1rem;
+            }
+            
+            .card-header-title {
+              color: white;
+              font-weight: 600;
+            }
+            
+            .input, .textarea, select {
+              background-color: #40444b;
+              border-color: #202225;
+              color: var(--discord-light);
+              transition: all 0.3s;
+            }
+            
+            .input:focus, .textarea:focus, select:focus {
+              border-color: var(--discord-blue);
+              box-shadow: 0 0 0 1px var(--discord-blue);
+            }
+            
+            .button.is-primary {
+              background-color: var(--discord-blue);
+            }
+            
+            .button.is-primary:hover {
+              background-color: #4752c4;
+            }
+            
+            .button.is-success {
+              background-color: var(--discord-green);
+            }
+            
+            .preview-area {
+              background-color: var(--discord-bg);
+              border-radius: 8px;
+              padding: 1rem;
+            }
+            
+            .embed-preview {
+              border-left: 4px solid #ffffff;
+              padding-left: 10px;
+              margin-top: 10px;
+            }
+            
+            .embed-author {
+              display: flex;
+              align-items: center;
+              margin-bottom: 5px;
+            }
+            
+            .embed-author img {
+              width: 24px;
+              height: 24px;
+              border-radius: 50%;
+              margin-right: 5px;
+            }
+            
+            .embed-title {
+              font-weight: bold;
+              margin-bottom: 8px;
+            }
+            
+            .embed-description {
+              margin-bottom: 8px;
+            }
+            
+            .embed-fields {
+              display: flex;
+              flex-wrap: wrap;
+              margin-bottom: 8px;
+            }
+            
+            .embed-field {
+              flex: 0 0 50%;
+              padding-right: 10px;
+              margin-bottom: 8px;
+            }
+            
+            .embed-field-name {
+              font-weight: bold;
+              margin-bottom: 2px;
+            }
+            
+            .embed-footer {
+              display: flex;
+              align-items: center;
+              font-size: 0.8em;
+              color: #999;
+              margin-top: 8px;
+            }
+            
+            .embed-footer img {
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+              margin-right: 5px;
+            }
+            
+            .embed-thumbnail {
+              float: right;
+              max-width: 80px;
+              max-height: 80px;
+              border-radius: 3px;
+              margin-left: 16px;
+            }
+            
+            .embed-image img {
+              max-width: 100%;
+              max-height: 300px;
+              border-radius: 3px;
+              margin-top: 8px;
+            }
+            
+            .tabs li.is-active a {
+              border-bottom-color: var(--discord-blue);
+              color: rgb(255, 255, 255);
+            }
+            
+            .tabs a {
+              color: #999;
+            }
+            
+            .tabs a:hover {
+              color: white;
+            }
+            
+            .status-success {
+              color: var(--discord-green);
+            }
+            
+            .status-error {
+              color: #ed4245;
+            }
+            
+            /* Responsive adjustments */
+            @media screen and (max-width: 768px) {
+              .columns {
+                margin-left: 0;
+                margin-right: 0;
+              }
+              
+              .embed-field {
+                flex: 0 0 100%;
+              }
+            }
