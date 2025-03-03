@@ -2,7 +2,7 @@
 Discord Webhook 
 
 ##### Live Demo  
-https://rokhimin.github.io/jekyll-discord-webhook
+https://rokhimin.github.io/discord-webhook
 
 https://discord-webhook-phi.vercel.app
 
